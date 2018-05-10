@@ -12,6 +12,7 @@ process.stdin.on('readable',function() {
 				break
 			case 'exit':
 				process.stdout.write('Quitting app!\n')
+				process.exit()
 				break
 			default:
 				process.stderr.write('Wrong instruction!\n')
